@@ -27,7 +27,28 @@ abstract class Acr122NfcReaderPlatform extends PlatformInterface {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
 
-  Future<bool?> requestPermission({required int vendorId, required int productId}) {
+  Future<bool?> requestPermission(
+      {required int vendorId, required int productId}) {
     throw UnimplementedError('initialize() has not been implemented.');
+  }
+
+  Future<int?> getCardState() async {
+    throw UnimplementedError('getCardState() has not been implemented.');
+  }
+
+  Future<void> powerOn() async {
+    throw UnimplementedError('powerOff() has not been implemented.');
+  }
+
+  Future<String?> auth({required String password}) async {
+    throw UnimplementedError('auth() has not been implemented.');
+  }
+
+  Future<String?> read({required int block, required List<int> command}) async {
+    throw UnimplementedError('read() has not been implemented.');
+  }
+
+  Future<int?> protocol({required int block, required int protocol}) async {
+    throw UnimplementedError('protocol() has not been implemented.');
   }
 }
